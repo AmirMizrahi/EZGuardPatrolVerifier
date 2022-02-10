@@ -80,37 +80,49 @@ namespace EZGuardPatrolVerifier
                     case ePatrolType.Rothchild:
                         {
                             keyValuePairs = TablesData.GetRothPoints(patrolHour1);
-                            inputByReleventSiteAndType("Facebook, TLV Rothchild", "Full Patrol Start", dd, keyValuePairs);
+                            inputByReleventSiteAndType("Meta, TLV Rothchild", "Full Patrol Start", dd, keyValuePairs);
                             break;
                         }
 
                     case ePatrolType.Sarona:
                         {
                             keyValuePairs = TablesData.GetSarPoints(patrolHour1);
-                            inputByReleventSiteAndType("Facebook, TLV Sarona", "START", dd, keyValuePairs);
+                            inputByReleventSiteAndType("Meta, TLV Sarona", "START", dd, keyValuePairs);
                             break;
                         }
 
                     case ePatrolType.JOH:
                         {
                             keyValuePairs = TablesData.GetJOHPoints(patrolHour1);
-                            inputByReleventSiteAndType("Facebook, JOH", "Recap START", dd, keyValuePairs);
+                            inputByReleventSiteAndType("Meta, JOH", "Recap START", dd, keyValuePairs);
                             break;
                         }
 
                     case ePatrolType.Novi:
                         {
                             keyValuePairs = TablesData.GetNoviPoints(patrolHour1);
-                            inputByReleventSiteAndType("Facebook, TLV Sarona", "START 31", dd, keyValuePairs);
+                            inputByReleventSiteAndType("Meta, TLV Sarona", "START 31", dd, keyValuePairs);
                             break;
                         }
 
                     case ePatrolType.NewFloors:
                         {
-                            keyValuePairs = TablesData.Get47To50Points(patrolHour1);
-                            inputByReleventSiteAndType("Facebook, TLV Sarona", "(START (46-50", dd, keyValuePairs);
+                            keyValuePairs = TablesData.Get46To50Points(patrolHour1);
+                            inputByReleventSiteAndType("Meta, TLV Sarona", "(START (46-50", dd, keyValuePairs);
                             break;
-                        }    
+                        }
+                    case ePatrolType.LowerFloorsT:
+                        {
+                            keyValuePairs = TablesData.GetT31Points();
+                            inputByReleventSiteAndType("Meta, TLV Sarona", "START", dd, keyValuePairs);
+                            break;
+                        }
+                    case ePatrolType.HigherFloorsT:
+                        {
+                            keyValuePairs = TablesData.GetT46Points();
+                            inputByReleventSiteAndType("Meta, TLV Sarona", "(START (46-50", dd, keyValuePairs);
+                            break;
+                        }
                 }
                 fileStream.Close();
             }
@@ -164,8 +176,8 @@ namespace EZGuardPatrolVerifier
             }
             else
             {
-                Clipboard.SetText("No points missing.");
-                MessageBox.Show("No points missing!" + Environment.NewLine + "(Already copied to your clipboard)");
+                Clipboard.SetText("יש הכל.");
+                MessageBox.Show("No points missing!" + Environment.NewLine + "(Already copied to your clipboard (now in Hebrew :))");
             }
         }
     }

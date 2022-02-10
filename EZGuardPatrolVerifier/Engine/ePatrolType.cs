@@ -13,6 +13,8 @@ namespace EZGuardPatrolVerifier.Engine
         JOH,
         Novi,
         NewFloors,
-        Savyon
+        Savyon,
+        LowerFloorsT,
+        HigherFloorsT
     }
 }

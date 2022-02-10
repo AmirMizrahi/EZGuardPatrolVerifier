@@ -105,12 +105,14 @@ namespace EZGuardPatrolVerifier
             // 
             this.comboBoxPatrol.FormattingEnabled = true;
             this.comboBoxPatrol.Items.AddRange(new object[] {
-            "Facebook, TLV Rothchild",
-            "Facebook, TLV Sarona",
-            "Facebook, JOH",
-            "Novi",
-            "47-50",
-            "Savyon"});
+            "TLV Rothchild",
+            "Sarona (33-37)",
+            "JOH",
+            "Novi (31-32)",
+            "46-50",
+            "Savyon",
+            "31-37 T",
+            "46-50 T"});
             this.comboBoxPatrol.Location = new System.Drawing.Point(68, 41);
             this.comboBoxPatrol.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxPatrol.Name = "comboBoxPatrol";

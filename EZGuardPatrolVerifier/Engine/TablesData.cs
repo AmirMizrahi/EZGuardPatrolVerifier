@@ -171,43 +171,41 @@ namespace EZGuardPatrolVerifier.Engine
         {
             if (patrolHour == ePatrolHour.Full)
             {
-                m_PatrolPoints.Add("Ex Emerg 1", false);
-                m_PatrolPoints.Add("Ex Emerg 2", false);
+                m_PatrolPoints.Add("1st Disabled", false);//
+                m_PatrolPoints.Add("1st Ladies", false);//
+                m_PatrolPoints.Add("1st Mens", false);//
+                m_PatrolPoints.Add("1st Emer Door", false);//
+                m_PatrolPoints.Add("1st Printer", false);//
+                m_PatrolPoints.Add("1st IT", false);//
+                m_PatrolPoints.Add("1st MR", false);//
+                m_PatrolPoints.Add("1st Nano", false);//
+                m_PatrolPoints.Add("2nd Disabled", false);//
+                m_PatrolPoints.Add("2nd Ladies", false);//
+                m_PatrolPoints.Add("2nd Mens", false);//
+                m_PatrolPoints.Add("Micro", false);//
             }
 
-            m_PatrolPoints.Add("Roof Culi Aircon", false);
-            m_PatrolPoints.Add("Roof IDF Aircons", false);
-            m_PatrolPoints.Add("Roof Hot Water", false);
+            m_PatrolPoints.Add("Recep FP", false);//
+            m_PatrolPoints.Add("Recep AED", false);//
+            m_PatrolPoints.Add("Ex Emerg 1", false);//
+            m_PatrolPoints.Add("Ex Emerg 2", false);//
+            m_PatrolPoints.Add("Basement Exit", false);//
+            m_PatrolPoints.Add("Base H2O Tanks", false);//
+            m_PatrolPoints.Add("1st DB", false);//
+            m_PatrolPoints.Add("1st Phase 2 Store", false);//
+            m_PatrolPoints.Add("1st Phase 2 Emer", false);//
+            m_PatrolPoints.Add("2nd DB", false);//
+            m_PatrolPoints.Add("2nd Games", false);//
+            m_PatrolPoints.Add("2nd Facil", false);//
+            m_PatrolPoints.Add("2nd Emer", false);//
+            m_PatrolPoints.Add("IDF", false);//
+            m_PatrolPoints.Add("Training", false);//
+            m_PatrolPoints.Add("Culinary", false);//
+            m_PatrolPoints.Add("Instagram", false);//
+            m_PatrolPoints.Add("BBQ", false);//
             m_PatrolPoints.Add("Terrace Emer", false);
-            m_PatrolPoints.Add("BBQ", false);
-            m_PatrolPoints.Add("Instagram", false);
-            m_PatrolPoints.Add("Micro", false);
-            m_PatrolPoints.Add("Culinary", false);
-            m_PatrolPoints.Add("Training", false);
-            m_PatrolPoints.Add("IDF", false);
-            m_PatrolPoints.Add("2nd Emer", false);
-            m_PatrolPoints.Add("2nd Facil", false);
-            m_PatrolPoints.Add("2nd Games", false);
-            m_PatrolPoints.Add("2nd Mens", false);
-            m_PatrolPoints.Add("2nd DB", false);
-            m_PatrolPoints.Add("2nd Ladies", false);
-            m_PatrolPoints.Add("2nd Disabled", false);
-            m_PatrolPoints.Add("1st Phase 2 Store", false);
-            m_PatrolPoints.Add("1st Phase 2 Emer", false);
-            m_PatrolPoints.Add("1st Nano", false);
-            m_PatrolPoints.Add("1st MR", false);
-            m_PatrolPoints.Add("1st IT", false);
-            m_PatrolPoints.Add("1st Printer", false);
-            m_PatrolPoints.Add("1st Emer Door", false);
-            m_PatrolPoints.Add("1st Mens", false);
-            m_PatrolPoints.Add("1st DB", false);
-            m_PatrolPoints.Add("1st Ladies", false);
-            m_PatrolPoints.Add("1st Disabled", false);
-            m_PatrolPoints.Add("Basement Exit", false);
-            m_PatrolPoints.Add("Base H2O Tanks", false);
-            m_PatrolPoints.Add("Ground Disabled", false);
-            m_PatrolPoints.Add("Recep FP", false);
-            m_PatrolPoints.Add("Recep AED", false);
+            m_PatrolPoints.Add("Roof IDF Aircons", false);//
+            m_PatrolPoints.Add("Roof Culi Aircon", false);//
 
             return m_PatrolPoints;
         }
@@ -251,7 +249,7 @@ namespace EZGuardPatrolVerifier.Engine
             return m_PatrolPoints;
         }
 
-        public static SortedDictionary<String, bool> Get47To50Points(ePatrolHour patrolHour)
+        public static SortedDictionary<String, bool> Get46To50Points(ePatrolHour patrolHour)
         {
             if (patrolHour == ePatrolHour.Full)
             {
@@ -312,6 +310,7 @@ namespace EZGuardPatrolVerifier.Engine
             m_PatrolPoints.Add("fire door (49)", false);
             m_PatrolPoints.Add("Electrical Room (49)", false);
             m_PatrolPoints.Add("Printer (49)", false);
+            m_PatrolPoints.Add("Showers (49)", false);
             m_PatrolPoints.Add("Micro Kitchen (49)", false);
 
             //50
@@ -321,6 +320,103 @@ namespace EZGuardPatrolVerifier.Engine
             m_PatrolPoints.Add("fire door (50)", false);
             m_PatrolPoints.Add("Micro Kitchen (50)", false);
             m_PatrolPoints.Add("(50) Defibrillator + Printer", false);
+
+            return m_PatrolPoints;
+        }
+
+        public static SortedDictionary<String, bool> GetT31Points()
+        {
+            //0G
+            m_PatrolPoints.Add("bicycle storage (-2)", false);
+            m_PatrolPoints.Add("bicycle storage (-4)", false);
+
+            //31
+            m_PatrolPoints.Add("South storage 31", false);
+            m_PatrolPoints.Add("North storage 31", false);
+            m_PatrolPoints.Add("Electrical Room  31", false);
+            m_PatrolPoints.Add("Fire Door 31", false);
+            m_PatrolPoints.Add("Service Elevator 31", false);
+
+            //32
+            m_PatrolPoints.Add("South storage 32", false);
+            m_PatrolPoints.Add("North storage 32", false);
+            m_PatrolPoints.Add("Electrical Room 32", false);
+            m_PatrolPoints.Add("Fire Door 32", false);
+            m_PatrolPoints.Add("Service Elevator 32", false);
+
+            //33
+            m_PatrolPoints.Add("south storage (33)", false);
+            m_PatrolPoints.Add("North storage (33)", false);
+            m_PatrolPoints.Add("electrical room (33)", false);
+            m_PatrolPoints.Add("Fire Door 33", false);
+            m_PatrolPoints.Add("service elevator (33)", false);
+
+            //34
+            m_PatrolPoints.Add("First Aid room+south storage (34)", false);
+            m_PatrolPoints.Add("north storage (34)", false);
+            m_PatrolPoints.Add("electrical room (34)", false);
+            m_PatrolPoints.Add("Fire Door 34", false);
+            m_PatrolPoints.Add("service elevator (34)", false);
+
+            //35
+            m_PatrolPoints.Add("south storage (35)", false);
+            m_PatrolPoints.Add("north storage (35)", false);
+            m_PatrolPoints.Add("electrical room - IT storage (35)", false);
+            m_PatrolPoints.Add("Fire Door 35", false);
+            m_PatrolPoints.Add("service elevator (35)", false);
+
+            //36
+            m_PatrolPoints.Add("south storage (36)", false);
+            m_PatrolPoints.Add("IT logistic room (36)", false);
+            m_PatrolPoints.Add("Elecrical room 36 (Event rack room)", false);
+            m_PatrolPoints.Add("Fire Door 36", false);
+            m_PatrolPoints.Add("Service Elevator(36)", false);
+
+            //37
+            m_PatrolPoints.Add("Non kosher storage (37)", false);
+            m_PatrolPoints.Add("kosher storage (37)", false);
+            m_PatrolPoints.Add("electrical room (37)", false);
+            m_PatrolPoints.Add("Elevator Lobby 37", false);
+            m_PatrolPoints.Add("service elevator (37)", false);
+
+            return m_PatrolPoints;
+        }
+
+        public static SortedDictionary<String, bool> GetT46Points()
+        {
+            //46
+            m_PatrolPoints.Add("South storage 46", false);
+            m_PatrolPoints.Add("North storage 46", false);
+            m_PatrolPoints.Add("Lockers Room 46", false);
+            m_PatrolPoints.Add("Fire Door  46", false);
+            m_PatrolPoints.Add("Service Elevator 46", false);
+
+            //47
+            m_PatrolPoints.Add("south storage (47)", false);
+            m_PatrolPoints.Add("North storage (47)", false);
+            m_PatrolPoints.Add("Electrical Room (47)", false);
+            m_PatrolPoints.Add("fire door (47)", false);
+            m_PatrolPoints.Add("service elevator (47)", false);
+
+            //48
+            m_PatrolPoints.Add("IT south storage (48)", false);
+            m_PatrolPoints.Add("North storage (48)", false);
+            m_PatrolPoints.Add("Electrical Room (48)", false);
+            m_PatrolPoints.Add("fire door (48)", false);
+            m_PatrolPoints.Add("service elevator (48)", false);
+
+            //49
+            m_PatrolPoints.Add("south storage (49)", false);
+            m_PatrolPoints.Add("North storage (49)", false);
+            m_PatrolPoints.Add("Electrical Room (49)", false);
+            m_PatrolPoints.Add("fire door (49)", false);
+            m_PatrolPoints.Add("service elevator (49)", false);
+
+            //50
+            m_PatrolPoints.Add("North storage (50)", false);
+            m_PatrolPoints.Add("Electrical Room + IDF (50)", false);
+            m_PatrolPoints.Add("fire door (50)", false);
+            m_PatrolPoints.Add("service elevator (50)", false);
 
             return m_PatrolPoints;
         }
