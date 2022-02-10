@@ -183,6 +183,7 @@ namespace EZGuardPatrolVerifier.Engine
                 m_PatrolPoints.Add("2nd Ladies", false);//
                 m_PatrolPoints.Add("2nd Mens", false);//
                 m_PatrolPoints.Add("Micro", false);//
+                m_PatrolPoints.Add("Training", false);//
             }
 
             m_PatrolPoints.Add("Recep FP", false);//
@@ -199,7 +200,6 @@ namespace EZGuardPatrolVerifier.Engine
             m_PatrolPoints.Add("2nd Facil", false);//
             m_PatrolPoints.Add("2nd Emer", false);//
             m_PatrolPoints.Add("IDF", false);//
-            m_PatrolPoints.Add("Training", false);//
             m_PatrolPoints.Add("Culinary", false);//
             m_PatrolPoints.Add("Instagram", false);//
             m_PatrolPoints.Add("BBQ", false);//
